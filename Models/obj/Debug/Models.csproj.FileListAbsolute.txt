@@ -1,0 +1,6 @@
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Models\bin\Debug\Models.dll
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Models\bin\Debug\Models.pdb
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Models\obj\Debug\Models.dll
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Models\obj\Debug\Models.pdb

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm-Pokemon", "EjemploADO.NET\WinForm-Pokemon.csproj", "{EB4F55EA-4257-4E97-915D-04F221D0A104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{4D8DC255-2CFA-4C36-B1C1-D0205F594B49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{C7AF6BD4-CF6A-46A4-B03F-745F05641898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB4F55EA-4257-4E97-915D-04F221D0A104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4F55EA-4257-4E97-915D-04F221D0A104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4F55EA-4257-4E97-915D-04F221D0A104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4F55EA-4257-4E97-915D-04F221D0A104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D8DC255-2CFA-4C36-B1C1-D0205F594B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8DC255-2CFA-4C36-B1C1-D0205F594B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8DC255-2CFA-4C36-B1C1-D0205F594B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8DC255-2CFA-4C36-B1C1-D0205F594B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7AF6BD4-CF6A-46A4-B03F-745F05641898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AF6BD4-CF6A-46A4-B03F-745F05641898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AF6BD4-CF6A-46A4-B03F-745F05641898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AF6BD4-CF6A-46A4-B03F-745F05641898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EF56C8-1BD3-4145-9B73-C29804B2922E}
+	EndGlobalSection
+EndGlobal

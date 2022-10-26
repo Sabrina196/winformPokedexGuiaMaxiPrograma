@@ -1,0 +1,9 @@
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\bin\Debug\Negocio.dll
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\bin\Debug\Negocio.pdb
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\bin\Debug\Models.dll
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\bin\Debug\Models.pdb
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\obj\Debug\Negocio.dll
+D:\Documentos\PracticasSabri\CursoC#Nivel2\EjemploADO.NET\Negocio\obj\Debug\Negocio.pdb

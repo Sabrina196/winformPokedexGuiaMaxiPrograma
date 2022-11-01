@@ -18,7 +18,7 @@ namespace EjemploADO.NET
     {
 
         private Pokemon pokemon = null;
-        private ImagenesUrl imagen = new ImagenesUrl();
+        private ValidarImagenUrl imagen = new ValidarImagenUrl();
         //Genera una ventana de dialogo que se va a abrir para elegir un 
         //archivo
         private OpenFileDialog archivo = null;

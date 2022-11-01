@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Models
 {
-    public class ImagenesUrl
+    public class ValidarImagenUrl
     {
         public void CargarImagen(string imagen, PictureBox cajaImagen)
         {

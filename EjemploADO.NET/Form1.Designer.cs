@@ -36,6 +36,7 @@ namespace EjemploADO.NET
             this.btnEliminarF = new System.Windows.Forms.Button();
             this.btnEliminarLogico = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.TlsElementos = new System.Windows.Forms.ToolStripLabel();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.btnFiltro = new System.Windows.Forms.Button();
@@ -45,7 +46,9 @@ namespace EjemploADO.NET
             this.cboCampo = new System.Windows.Forms.ComboBox();
             this.cboCriterio = new System.Windows.Forms.ComboBox();
             this.txtFiltroAvanzado = new System.Windows.Forms.TextBox();
-            this.TlsElementos = new System.Windows.Forms.ToolStripLabel();
+            this.lblMensajeCampo = new System.Windows.Forms.Label();
+            this.lblMensajeCriterio = new System.Windows.Forms.Label();
+            this.lblMensajeFiltro = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -122,9 +125,16 @@ namespace EjemploADO.NET
             this.TlsElementos});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(919, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(921, 25);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // TlsElementos
+            // 
+            this.TlsElementos.Name = "TlsElementos";
+            this.TlsElementos.Size = new System.Drawing.Size(71, 22);
+            this.TlsElementos.Text = "ELEMENTOS";
+            this.TlsElementos.Click += new System.EventHandler(this.TlsElementos_Click);
             // 
             // lblFiltro
             // 
@@ -199,6 +209,7 @@ namespace EjemploADO.NET
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(129, 21);
             this.cboCriterio.TabIndex = 15;
+            this.cboCriterio.SelectedIndexChanged += new System.EventHandler(this.cboCriterio_SelectedIndexChanged);
             // 
             // txtFiltroAvanzado
             // 
@@ -206,19 +217,40 @@ namespace EjemploADO.NET
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(145, 20);
             this.txtFiltroAvanzado.TabIndex = 16;
+            this.txtFiltroAvanzado.TextChanged += new System.EventHandler(this.txtFiltroAvanzado_TextChanged);
             // 
-            // TlsElementos
+            // lblMensajeCampo
             // 
-            this.TlsElementos.Name = "TlsElementos";
-            this.TlsElementos.Size = new System.Drawing.Size(71, 22);
-            this.TlsElementos.Text = "ELEMENTOS";
-            this.TlsElementos.Click += new System.EventHandler(this.TlsElementos_Click);
+            this.lblMensajeCampo.AutoSize = true;
+            this.lblMensajeCampo.Location = new System.Drawing.Point(63, 519);
+            this.lblMensajeCampo.Name = "lblMensajeCampo";
+            this.lblMensajeCampo.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeCampo.TabIndex = 17;
+            // 
+            // lblMensajeCriterio
+            // 
+            this.lblMensajeCriterio.AutoSize = true;
+            this.lblMensajeCriterio.Location = new System.Drawing.Point(253, 518);
+            this.lblMensajeCriterio.Name = "lblMensajeCriterio";
+            this.lblMensajeCriterio.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeCriterio.TabIndex = 18;
+            // 
+            // lblMensajeFiltro
+            // 
+            this.lblMensajeFiltro.AutoSize = true;
+            this.lblMensajeFiltro.Location = new System.Drawing.Point(436, 519);
+            this.lblMensajeFiltro.Name = "lblMensajeFiltro";
+            this.lblMensajeFiltro.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeFiltro.TabIndex = 19;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 551);
+            this.ClientSize = new System.Drawing.Size(921, 565);
+            this.Controls.Add(this.lblMensajeFiltro);
+            this.Controls.Add(this.lblMensajeCriterio);
+            this.Controls.Add(this.lblMensajeCampo);
             this.Controls.Add(this.txtFiltroAvanzado);
             this.Controls.Add(this.cboCriterio);
             this.Controls.Add(this.cboCampo);
@@ -267,6 +299,9 @@ namespace EjemploADO.NET
         private System.Windows.Forms.ComboBox cboCriterio;
         private System.Windows.Forms.TextBox txtFiltroAvanzado;
         private System.Windows.Forms.ToolStripLabel TlsElementos;
+        private System.Windows.Forms.Label lblMensajeCampo;
+        private System.Windows.Forms.Label lblMensajeCriterio;
+        private System.Windows.Forms.Label lblMensajeFiltro;
     }
 }
 

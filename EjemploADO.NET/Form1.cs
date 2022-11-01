@@ -18,7 +18,9 @@ namespace EjemploADO.NET
         //manipular esos datos
         private List<Pokemon> ListaPokemon;
 
-        ImagenesUrl Imagen = new ImagenesUrl();
+        ValidarImagenUrl Imagen = new ValidarImagenUrl();
+
+        MetodoNumero objNumero = new MetodoNumero();
 
         public Form1()
         {
@@ -123,9 +125,12 @@ namespace EjemploADO.NET
         
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            lblMensajeCampo.Text = "";
+            lblMensajeCriterio.Text = "";
+            lblMensajeFiltro.Text = "";
 
             string opcion = cboCampo.SelectedItem.ToString();
+
 
             if (opcion == "Número")
             {
@@ -145,23 +150,46 @@ namespace EjemploADO.NET
 
         }
 
+        private void cboCriterio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!(cboCriterio.SelectedIndex < 0))
+            {
+                lblMensajeCampo.Text = "";
+                lblMensajeCriterio.Text = "";
+                lblMensajeFiltro.Text = "";
+            }
+        }
+
+        private void txtFiltroAvanzado_TextChanged(object sender, EventArgs e)
+        {
+            lblMensajeFiltro.Text = "";
+        }
+
         private void btnFiltro_Click(object sender, EventArgs e)
         {
             PokemonNegocio negociofiltro = new PokemonNegocio();
             try
             {
+                lblMensajeCampo.Text = "";
+                lblMensajeCriterio.Text = "";
+                lblMensajeFiltro.Text = "";
+
+                if (validarfiltro())
+                {
+                    return;
+                } 
+
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txtFiltroAvanzado.Text;
 
                 dgvPokemon.DataSource = negociofiltro.Filtrar(campo, criterio, filtro);
-
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-
 
         }
 
@@ -193,6 +221,35 @@ namespace EjemploADO.NET
         {
             dgvPokemon.Columns["UrlImagen"].Visible = false;
             dgvPokemon.Columns["Id"].Visible = false;
+        }
+
+        //Método para validar Filtro
+        private bool validarfiltro()
+        {
+            if (cboCampo.SelectedIndex < 0)
+            {
+                lblMensajeCampo.Text = "Por favor, seleccione un campo";
+                lblMensajeCampo.ForeColor = Color.Red;
+                return true;
+            }
+            if (cboCriterio.SelectedIndex < 0)
+            {
+                lblMensajeCriterio.Text ="Por favor, seleccione un criterio";
+                lblMensajeCriterio.ForeColor = Color.Red;
+                return true;
+            }
+            if (cboCampo.SelectedItem.ToString() == "Número")
+            {
+                string Cadena = txtFiltroAvanzado.Text;
+                if (!(objNumero.EsNumero(Cadena)) || Cadena == "")
+                {
+                    lblMensajeFiltro.Text = "Por favor, ingrese un nùmero";
+                    lblMensajeFiltro.ForeColor = Color.Red;
+                    return true;
+                }
+
+            }
+            return false;
         }
 
         //Método para eliminar registros, ya sea fisica o de forma lógica
